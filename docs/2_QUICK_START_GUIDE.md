@@ -37,7 +37,7 @@ Below are the steps for deploying the [_Azure Hello World CIT_](../infra/templat
 
 | Preview | Quick Start Azure Cloud Resources (pending az simple architecture diagram) |
 |----------|--------------|
-|![Cobalt Sample Gif](https://media.giphy.com/media/TJVF0piXxS1o4V44OD/giphy.gif) | ![image](https://user-images.githubusercontent.com/7635865/57530235-64348780-72fc-11e9-9280-9da656037c2f.png) |
+|![cobalt sample gif](./screentogif-40sec-test.gif) | ![image](https://user-images.githubusercontent.com/7635865/57530235-64348780-72fc-11e9-9280-9da656037c2f.png) |
 
 <!--- These gifs will have screenshots from forking, terraform plan and apply, visit azure portal and visit app service url --->
 
