@@ -31,13 +31,13 @@ You can get pretty creative and build your own custom *CIT*s in order to use and
 
 ---
 
-## 2.4 Deploying Cobalt's [_Azure Hello World CIT_](../infra/templates/az-hello-world/README.md)
+## 2.4 Deploy Cobalt's [_Azure Hello World CIT_](../infra/templates/az-hello-world/README.md)
 
 Below are the steps for deploying the [_Azure Hello World CIT_](../infra/templates/az-hello-world/README.md). Ensure that this deployment outputs the following Azure cloud resources before you can call this quick start guide finished:
 
-| Preview | Quick Start Azure Cloud Resources (pending az simple architecture diagram) |
+| Preview | Quick Start Azure Cloud Resources |
 |----------|--------------|
-|![cobalt-'NickeManarin/Screen2Gif'](./screentogif-40sec-test.gif) | ![image](https://user-images.githubusercontent.com/7635865/57530235-64348780-72fc-11e9-9280-9da656037c2f.png) |
+|![cobalt-'NickeManarin/Screen2Gif'](./screentogif-40sec-test.gif) | ![image](https://user-images.githubusercontent.com/10041279/66523301-3921b000-eab5-11e9-8192-8bf304b03fdd.png) |
 
 <!--- These gifs will have screenshots from forking, terraform plan and apply, visit azure portal and visit app service url --->
 

@@ -1,10 +1,8 @@
-![pending architecture]()
-
 # The Azure Hello World Pattern
 
 The `az-hello-world` template is intended to be a reference for running a single public Linux Container within an Azure Application Service Plan.
 
->> *Have you completed the quick start guide? Deploy your first infrastructure as code project with Cobalt by following the [quick-start guide](https://github.com/microsoft/cobalt/blob/master/docs/2_QUICK_START_GUIDE.md).*
+> *Have you completed the quick start guide? Deploy your first infrastructure as code project with Cobalt by following the [quick-start guide](https://github.com/microsoft/cobalt/blob/master/docs/2_QUICK_START_GUIDE.md).*
 
 ## Use-Case
 
@@ -17,6 +15,8 @@ This deployment creates the following:
  1. Azure Resource Group
  2. Linux App Service Plan
  3. App Service Container w/ public i.p.
+
+> ![image](https://user-images.githubusercontent.com/10041279/66523301-3921b000-eab5-11e9-8192-8bf304b03fdd.png)
 
 ## Intended audience
 
