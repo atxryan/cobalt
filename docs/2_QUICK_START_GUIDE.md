@@ -37,7 +37,7 @@ Below are the steps for deploying the [_Azure Hello World CIT_](../infra/templat
 
 | Preview | Quick Start Azure Cloud Resources (pending az simple architecture diagram) |
 |----------|--------------|
-|![cobalt sample gif](./screentogif-40sec-test.gif) | ![image](https://user-images.githubusercontent.com/7635865/57530235-64348780-72fc-11e9-9280-9da656037c2f.png) |
+|![cobalt-'NickeManarin/Screen2Gif'](./screentogif-40sec-test.gif) | ![image](https://user-images.githubusercontent.com/7635865/57530235-64348780-72fc-11e9-9280-9da656037c2f.png) |
 
 <!--- These gifs will have screenshots from forking, terraform plan and apply, visit azure portal and visit app service url --->
 
@@ -209,7 +209,7 @@ If you correctly completed the previous step, you can trust that Azure resources
 
 ### **Final Step:** Teardown Infrastructure
 
-Tearing down the infrastructure just created is as easy as running a terraform command within the scope of the same Terraform environment and workspace that created it.
+Tearing down the infrastructure just created is as easy as running a terraform command within the scope of the same Terraform environment and workspace that created it. Gaining access to the scope of the workspace is as easy as navigating to the Cobalt CIT template directory holding a reference to the environment and workspace.
 
 1. From within the Azure portal, visit the Azure blob storage json file (i.e. "az-hw-$USER") which remotely holds the state of your deployed Azure infrastructure and view it's contents. The next step will wipe out the contents of this file and delete the associated Azure infrastructure.
 
