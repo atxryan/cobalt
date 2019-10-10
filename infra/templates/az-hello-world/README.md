@@ -16,7 +16,7 @@ This deployment creates the following:
  2. Linux App Service Plan
  3. App Service Container w/ public i.p.
 
-> ![image](https://user-images.githubusercontent.com/10041279/66523301-3921b000-eab5-11e9-8192-8bf304b03fdd.png)
+> ![image](https://user-images.githubusercontent.com/10041279/66533295-0fc64b80-ead8-11e9-96c0-ea5441cde854.png)
 
 ## Intended audience
 
