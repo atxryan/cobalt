@@ -24,7 +24,7 @@ You can get pretty creative and build your own custom *CIT*s in order to use and
 
 | Azure Prereqs | Description | I | Install Prereqs | Description |
 |----------|--------------|-|----------|--------------|
-| `Azure Subscription` | [Azure Portal](https://portal.azure.com/) - This template needs to deploy infrastructure within an Azure subscription.|I|`Terminal with bash shell`|[WSL](https://code.visualstudio.com/docs/remote/wsl) or [Git Bash](https://git-scm.com/downloads) - The shell environment needed to follow along with the provided instructions.|
+| `Azure Subscription` | [Azure Portal](https://portal.azure.com/) - This template needs to deploy infrastructure within an Azure subscription.|I|`Terminal with bash shell`|[WSL](https://code.visualstudio.com/docs/remote/wsl) or [Git Bash](https://git-scm.com/downloads) - The shell environment needed to follow along with the provided instructions. *We recommend Visual Studio Code integrated WSL*.|
 |`Azure Service Principal`|[Azure Service Principal](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal) - This template needs permissions to deploy infrastructure within an Azure subscription.|I|`Git Source Control`|[Install git](https://www.atlassian.com/git/tutorials/install-git)|
 |`Azure Storage Account`|[Azure Storage Account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview) - An account for tracking terraform remote backend state. You can use our backend state setup [template](../infra/templates/backend-state-setup/README.md) to provision the storage resources.|I|`Terraform`|[Terraform](https://www.terraform.io/downloads.html) - Download the appropriate environment for setting up Terraform|
 |`Azure CLI`|[Get started with Azure CLI](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest)- An account for tracking terraform remote backend state. You can use our backend state setup [template](../infra/templates/backend-state-setup/README.md) to provision the storage resources.|I|`GitHub Account`|[Github](https://github.com/login) - An account for forking the Cobalt repo|
@@ -35,11 +35,11 @@ You can get pretty creative and build your own custom *CIT*s in order to use and
 
 Below are the steps for deploying the [_Azure Hello World CIT_](../infra/templates/az-hello-world/README.md). Ensure that this deployment outputs the following Azure cloud resources before you can call this quick start guide finished:
 
-| Preview | Quick Start Azure Cloud Resources |
+| Preview Steps | Final Output (Quick Start Guide) |
 |----------|--------------|
 |![cobalt-'NickeManarin/Screen2Gif'](./screentogif-40sec-test.gif)| <image src="https://user-images.githubusercontent.com/10041279/66533295-0fc64b80-ead8-11e9-96c0-ea5441cde854.png" width="1400"/> |
 
-<!--- These gifs will have screenshots from forking, terraform plan and apply, visit azure portal and visit app service url --->
+<!--- This gif will have screenshots from forking, terraform plan and apply, visit azure portal and visit app service url --->
 
 ### **Step 1:** Fork Cobalt Repo
 
@@ -168,7 +168,7 @@ This is the step that demonstrates what the [_Azure Hello World CIT_](../infra/t
     terraform apply
     ```
 
-1. Take note of the name of the resource group output from Terraform apply.
+1. From the terminal, take note of the name of the resource group output from Terraform apply. In the next step, you'll log in to the Azure portal and search for this resource group.
 
 * **Azure Hello World CIT [Main.tf](https://github.com/microsoft/cobalt/blob/master/infra/templates/az-hello-world/main.tf) File**
 
@@ -209,9 +209,9 @@ If you correctly completed the previous step, you can trust that Azure resources
 
 ### **Final Step:** Teardown Infrastructure
 
-Tearing down the infrastructure just created is as easy as running a terraform command within the scope of the same Terraform environment and workspace that created it. Gaining access to the scope of the workspace is as easy as navigating to the Cobalt CIT template directory holding a reference to the environment and workspace.
+Tearing down the infrastructure just created is as easy as running a Terraform command within the scope of the same Terraform environment and workspace that created it. Gaining access to the scope of the workspace is as easy as navigating to the Cobalt CIT template directory that's holding a reference to the environment and workspace.
 
-1. From within the Azure portal, visit the Azure blob storage json file (i.e. "az-hw-$USER") which remotely holds the state of your deployed Azure infrastructure and view it's contents. The next step will wipe out the contents of this file and delete the associated Azure infrastructure.
+1. From within the Azure portal, visit the Azure blob storage json file (i.e. "az-hw-$USER") and view it's contents. This file remotely holds the state of your deployed Azure infrastructure. Here, you should see references to the Azure infrastructure that you just created. The next step will wipe out the contents of this file.
 
 1. Locally, from the az-hello-world directory, execute the following command to teardown your deployment and delete your resources.
 
