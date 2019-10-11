@@ -24,23 +24,7 @@ Application developer that is brand new to Cobalt templating and it's *Cobalt In
 
 ## Prerequisites
 
-* App dev experience (prev. "infrastructure as code" experience not required)
-* An Azure Subscription
-  * [Azure Portal](https://portal.azure.com/) - This template needs to deploy infrastructure within an Azure subscription.
-* An Azure Service Principal
-  * [Azure Service Principal](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-create-service-principal-portal) - This template needs permissions to deploy infrastructure within an Azure sbuscription.
-* An Azure Storage Account
-  * [Azure Storage Account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview) - An account for tracking terraform remote backend state. You can use our backend state setup [template](../infra/templates/backend-state-setup/README.md) to provision the storage resources.
-* Terminal with bash shell
-  * [WSL](https://code.visualstudio.com/docs/remote/wsl) or [Git Bash](https://git-scm.com/downloads) - The shell environment needed to follow along with the provided instructions.
-* Local environment
-  * [Local environment setup](https://github.com/microsoft/cobalt/tree/master/test-harness#local-environment-setup)
-* Git Source Control
-  * [Install git](https://www.atlassian.com/git/tutorials/install-git)
-* Local Terrafrom
-  * [Install Terraform](https://learn.hashicorp.com/terraform/getting-started/install.html)
-* Azure CLI
-  * [Get started with Azure CLI](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest)
+Please see the quick start guide's list of prerequisites: *[quick-start guide prerequisites](https://github.com/microsoft/cobalt/blob/master/docs/2_QUICK_START_GUIDE.md#2.3-prerequisites).*
 
 ## Example Usage
 
@@ -72,7 +56,7 @@ module "app_service" {
 }
 ```
 
-4. Execute the following commands to set up your terraform environment.
+4. Execute the following commands to set up your terraform workspace.
 
 ```bash
 # This configures terraform to leverage a remote backend that will help you and your
