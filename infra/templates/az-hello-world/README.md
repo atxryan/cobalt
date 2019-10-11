@@ -14,9 +14,10 @@ This deployment creates the following:
 
  1. Azure Resource Group
  2. Linux App Service Plan
- 3. App Service Container w/ public i.p.
+ 3. App Service and Container w/ public i.p.
+ 4. App Service Staging slot and Container w/ public i.p.
 
-> ![image](https://user-images.githubusercontent.com/10041279/66533295-0fc64b80-ead8-11e9-96c0-ea5441cde854.png)
+> ![AZ-HW-CIT-Architecture](https://user-images.githubusercontent.com/10041279/66678697-149f1280-ec32-11e9-9bbb-c94a8111115b.png)
 
 ## Intended audience
 
