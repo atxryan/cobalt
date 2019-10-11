@@ -12,7 +12,7 @@ You can get pretty creative and build your own custom *CIT*s in order to use and
 
 🔲 Prepare local environment for running *Cobalt Infrastructure Template*s.
 
-🔲 Run the [*Azure Hello World CIT*](../infra/templates/az-hello-world/README.md "AZ Hello World - Cobalt Infrastructure Template") to create an Azure [Resource Group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview), an [App Service Plan](https://docs.microsoft.com/en-us/azure/app-service/overview-hosting-plans), an [App Service](https://docs.microsoft.com/en-us/azure/app-service/) running a public docker container and an [Ap Service Staging slot](https://docs.microsoft.com/en-us/azure/app-service/deploy-staging-slots).
+🔲 Run the [*Azure Hello World CIT*](../infra/templates/az-hello-world/README.md "AZ Hello World - Cobalt Infrastructure Template") to create an [Azure Resource Group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-overview), an [App Service Plan](https://docs.microsoft.com/en-us/azure/app-service/overview-hosting-plans), an [App Service](https://docs.microsoft.com/en-us/azure/app-service/) running a public docker container and an [App Service Staging Slot](https://docs.microsoft.com/en-us/azure/app-service/deploy-staging-slots).
 
 🔲 Walk away with a introductory understanding of the *CIT* developer workflow.
 
