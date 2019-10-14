@@ -36,7 +36,7 @@ You can get pretty creative and build your own custom *CIT*s in order to use and
 
 ## 2.4 Run Cobalt's [_Azure Hello World CIT_](../infra/templates/az-hello-world/README.md)
 
-Below are the steps for running the [_Azure Hello World CIT_](../infra/templates/az-hello-world/README.md) from your terminal. Ensure that running this template deploys the following Azure cloud resources before you can call this quick start guide finished:
+Below are the steps for running the [_Azure Hello World CIT_](../infra/templates/az-hello-world/README.md) from your terminal. Ensure that running this template achieves the quick start guide's final goal of deploying the following Azure cloud infrastructure before you can call this quick start guide finished:
 
 | Preview Steps | Final Goal |
 |----------|--------------|
@@ -219,8 +219,25 @@ The infrastructure created from running the Azure Hello World CIT is no longer n
     terraform workspace delete az-hw-$USER
     ```
 
+1. Delete the local workspace directory created from running the 'terraform init' command in an earlier step.
+
+    ```bash
+    $ tree infra
+    ├───.env.template
+    ├───.env
+    ├───modules
+    └───templates
+        ├───az-hello-world
+        │   └───.terraform # Remove this directory
+        └───backend-state-setup
+    ```
+
+    ```bash
+    rm -rf .terraform
+    ```
+
 ## Conclusion
 
-This is a great opportunity to point out that steps 4-6 are effectively the *local* Cobalt developer workflow. (i.e. create/choose a template ---> init ---> workspace (local or remote) ---> apply ---> plan ---> destroy)
+Completion of this quick start guide means that you have used the Azure Hello World CIT to deploy Azure infrastructure from your local device. You have also torn down the infrastructure along with the associated workspace files created for managing the state of the infrastructure. Effectively, this has been an exercise in the *local* Cobalt developer workflow. (i.e. create/choose a template ---> init ---> workspace (local or remote) ---> apply ---> plan ---> destroy)
 
 ### **Recommended Next Step:** *[Cobalt Templating from Scratch](./3_NEW_TEMPLATE.md).*
