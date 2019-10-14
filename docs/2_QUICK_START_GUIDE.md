@@ -29,7 +29,7 @@ You can get pretty creative and build your own custom *CIT*s in order to use and
 |Azure Storage Account|[Azure Storage Account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview) - An account for tracking Terraform remote backend state. You can use our backend state setup [template](../infra/templates/backend-state-setup/README.md) to provision the storage resources.|
 |Azure CLI (`Latest`)|[Get started with Azure CLI](https://docs.microsoft.com/en-us/cli/azure/get-started-with-azure-cli?view=azure-cli-latest) - The Azure CLI is a dependency of the Terraform templates used in Cobalt.|
 |GitHub Account|[Github](https://github.com/login) - An account for forking the Cobalt repo.|
-|Terraform `(0.12.4)`|[Terraform](https://www.terraform.io/downloads.html) - Download the appropriate version for setting up Terraform.|
+|Terraform `(0.12 +)`|[Terraform](https://www.terraform.io/downloads.html) - Download the appropriate version for setting up Terraform.|
 |Git Source Control|[Install git](https://git-scm.com/downloads).|
 |Terminal with bash shell|[WSL](https://code.visualstudio.com/docs/remote/wsl) or [Bash](https://git-scm.com/downloads) - The shell environment needed to follow along with the provided instructions. *In Windows, we recommend Visual Studio Code integrated WSL*.|
 ---
